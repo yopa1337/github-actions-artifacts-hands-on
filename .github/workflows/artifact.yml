@@ -24,5 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
-        name: hello-artifact
+        with:
+          name: hello-artifact
       - run: cat hello.txt
